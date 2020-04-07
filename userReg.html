@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>inN</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top mb-3">
+      <div class="container">
+        <a class="navbar-brand text-primary" href="/index.html">inN</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <form class="form-inline ml-auto">
+              <input
+                type="text"
+                class="form-control mr-2"
+                placeholder="Search Hostels"
+              />
+              <button class="btn btn-outline-primary">Search</button>
+            </form>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#signup"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                >signup</a
+              >
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item">signup as user</a>
+                <a href="" class="dropdown-item">signup as provider</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--User Registration form -->
+    <div class="user-registration bg-light mb-10">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4 class="display-4 text-primary">Register here</h4>
+            <p class="lead text-primary">
+              please provide your valid information
+            </p>
+          </div>
+          <div class="col-md-8">
+            <form action="">
+              <label class="text-dark" for=""> FirstName</label>
+              <label
+                class="text-dark"
+                style="float: right; margin-right: 289px;"
+                for=""
+              >
+                LastName</label
+              >
+              <div class="form-row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control "
+                    placeholder="FirstName"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control "
+                    placeholder="LastName"
+                  />
+                </div>
+              </div>
+              <br />
+              <label class="text-dark" for="Email">Email</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Email" />
+                <div class="input-group-append">
+                  <span class="input-group-text">@something.com</span>
+                </div>
+              </div>
+              <br />
+              <label class="text-dark" for="password">Password</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">**</span>
+                </div>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                />
+              </div>
+              <br />
+
+              <label class="text-dark" for="confirm_password"
+                >Confirm Password</label
+              >
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">**</span>
+                </div>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Confirm Password"
+                />
+              </div>
+              <br />
+              <label class="text-dark" for="">Age</label>
+              <div class="from-group">
+                <div class="form-row">
+                  <div class="col-md-11">
+                    <input
+                      id="slider11"
+                      class="custom-range"
+                      type="range"
+                      min="0"
+                      max="75"
+                    />
+                  </div>
+                  <div class="col-md-1">
+                    <span
+                      class="font-weight-bold text-primary  valueSpan"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <label class="text-dark" for="address">Address</label>
+              <div class="form-group">
+                <input
+                  type="textarea"
+                  class="form-control"
+                  placeholder="Hno/Street/Landmark/City"
+                />
+              </div>
+              <div class="form-group">
+                <label class="text-dark" for="gender">Gender</label>
+                <select class="form-control" id="gender">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <button
+                    type="submit"
+                    class="btn btn-success btn-block p-3"
+                    value="SUBMIT"
+                  >
+                    SUBMIT
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    type="reset"
+                    class="btn btn-secondary btn-block p-3"
+                    value="SUBMIT"
+                  >
+                    RESET
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <footer id="main-footer" class=" text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-4">
+            <h3>inN</h3>
+            <p>copyright &copy; <span id="year"></span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function() {
+        const $valueSpan = $(".valueSpan");
+        const $value = $("#slider11");
+        $valueSpan.html($value.val());
+        $value.on("input change", () => {
+          $valueSpan.html($value.val());
+        });
+      });
+    </script>
+
+    <script>
+      //get the current year for the copyright
+      $("#year").text(new Date().getFullYear);
+    </script>
+  </body>
+</html>

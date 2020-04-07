@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>inN</title>
+  </head>
+  <body>
+    <!--<nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">inN</a>
+
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <form class="form-inline ml-auto">
+              <input type="text" class="form-control" placeholder="search" />
+              <button class="btn btn-outline-success mr-1">Search</button>
+            </form>
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#explore" class="nav-link">explore</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#signup"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                >signup</a
+              >
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item">signup as user</a>
+                <a href="" class="dropdown-item">signup as provider</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">about</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>-->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top mb-3">
+      <div class="container">
+        <a class="navbar-brand text-primary" href="/index.html">inN</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <form class="form-inline ml-auto form-group">
+              <div class="btn-group">
+                <input
+                  type="date"
+                  class=" input-group date form-control"
+                  value="from"
+                />
+                <input type="date" class="form-control" value="from" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search Hostels"
+                />
+                <button type="submit" class="btn btn-outline-primary">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </form>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#signup"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                >signup</a
+              >
+              <div class="dropdown-menu">
+                <a href="/userReg.html" class="dropdown-item">signup as user</a>
+                <a href="/providerReg.html" class="dropdown-item">signup as provider</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--home section-->
+    <header id="home-section">
+      <div class="dark-overlay">
+        <div class="home-inner container">
+          <div class="row">
+            <div class="col-lg-8 d-none d-lg-block">
+              <h1 class="display-4">
+                Get your <strong>Hostels</strong> in an easier way
+              </h1>
+              <div class="d-flex">
+                <div class="p-4 align-self-start">
+                  <i class="fas fa-check fa-2x"></i>
+                </div>
+                <div class="p-4 align-self-end">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
+                  similique doloribus reprehenderit aspernatur totam veniam?
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <div class="p-4 align-self-start">
+                  <i class="fas fa-check fa-2x"></i>
+                </div>
+                <div class="p-4 align-self-end">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
+                  similique doloribus reprehenderit aspernatur totam veniam?
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <div class="p-4 align-self-start">
+                  <i class="fas fa-check fa-2x"></i>
+                </div>
+                <div class="p-4 align-self-end">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
+                  similique doloribus reprehenderit aspernatur totam veniam?
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card bg-primary text-center card-form">
+                <div class="card-body">
+                  <h3>Login</h3>
+                  <p>please provide your details</p>
+                  <form action="">
+                    <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">@</span>
+                      </div>
+                      <input
+                        type="email"
+                        class="form-control form-control-lg"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">**</span>
+                      </div>
+                      <input
+                        type="password"
+                        class="form-control form-control-lg"
+                        placeholder="Password"
+                      />
+                    </div>
+                    <div class="form-check text-left mb-2">
+                      <label class="form-check-label mr-2">
+                        <input class="form-check-input" type="checkbox" />
+                        Remember me
+                      </label>
+                    </div>
+                    <input
+                      type="submit"
+                      value="submit"
+                      class="btn btn-outline-light btn-block"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--explore head-->
+    <section id="hostel-head-section">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1 class="display4">Hostels</h1>
+            <p class="lead">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+              tempora molestiae voluptatum sapiente iure accusamus sint
+              blanditiis quos sit. Vel?
+            </p>
+            <a href="" class="btn btn-outline-secondary">Find hostels</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hostel section-->
+    <section id="hostel-section" class="bg-light text-muted py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="/img/3616112.jpg"
+              alt=""
+              class="img-fluid mb-3 rounded-circle"
+            />
+          </div>
+          <div class="col-md-6 text-center">
+            <h3>Cool And Perfect</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+              minus sapiente fuga nemo odit eum voluptas sint quaerat officia
+              voluptates.
+            </p>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                velit tenetur quisquam minima optio dicta.
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                velit tenetur quisquam minima optio dicta.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about bg-dark py-5">
+      <div class="dark-overlay">
+        <div class="container">
+          <p class="lead display-4 text-center mb-3">
+            Our <strong>Special Features</strong>
+          </p>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-dark mb-3 text-center">
+                <div class="card-body">
+                  <h4 class="card-title">Physical Check</h4>
+                  <p class="card-text">
+                    We are providing a beautifull option for you to check the
+                    hostels physically and, if you like it, you go in..
+                  </p>
+                  <a class="btn btn-danger" href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card  bg-primary  mb-3 text-center">
+                <div class="card-body">
+                  <h4 class="card-title">Red and Green's</h4>
+                  <p class="card-text">
+                    Every hostel in here this website has some red and green
+                    flags,so that you can select the hostel which you want to
+                    join in ..
+                  </p>
+                  <a class="btn btn-outline-light" href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-dark mb-3 text-center">
+                <div class="card-body">
+                  <h4 class="card-title  text-center">Complete Transparency</h4>
+                  <p class="card-text">
+                    we provide complete Transparency about the hostels in our
+                    website, now its time to find a perfect hostel..
+                  </p>
+                  <a class="btn btn-danger" href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer id="main-footer" class=" text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-4">
+            <h3>inN</h3>
+            <p>copyright &copy; <span id="year"></span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      //get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
